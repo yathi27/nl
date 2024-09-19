@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackathon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../assets/app.css" rel="stylesheet" />
+    <style>
+        /* Custom CSS to remove link styles in search results */
+        #search-dropdown .dropdown-item {
+            color: #000 !important; /* Normal text color */
+            text-decoration: none !important; /* Remove underline */
+        }
+    
+        /* Specific to <a> tags inside dropdown-item */
+        #search-dropdown .dropdown-item a {
+            color: inherit !important; /* Inherit the color from parent */
+            text-decoration: none !important; /* Remove underline from <a> */
+            display: block; /* Ensure it behaves like a block element */
+            padding: 10px; /* Optional: add some padding for better readability */
+        }
+    
+        /* Hover effects for better user experience */
+        #search-dropdown .dropdown-item:hover a {
+            background-color: #f8f9fa; /* Optional: add hover effect */
+        }
+    
+        /* Styling for bold titles in the search results */
+        #search-dropdown .dropdown-item strong {
+            font-weight: bold;
+        }
+    
+        /* Styling for the snippet text */
+        #search-dropdown .dropdown-item small {
+            color: #6c757d; /* Optional: make the snippet gray */
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/nllogo.png" height="70" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Articles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../pages/synergy.html">FTDS Team Meetup</a></li>
+                            <li><a class="dropdown-item" href="../pages/hackathon.html">RA India Hackathon 2023</a></li>
+                            <li><a class="dropdown-item" href="../pages/connectedworker.html">Connected Worker</a></li>
+                            <li><a class="dropdown-item" href="../pages/ftdm.html">FT Optix - DataMosaix Connector</a></li>
+                            <li><a class="dropdown-item" href="../pages/llm.html">Tech Writer vs LLM</a></li>
+                            <li><a class="dropdown-item" href="../pages/kyc.html">Know Your Colleague</a></li>
+                            <li><a class="dropdown-item" href="../pages/sikkim.html">Personal Space</a></li>
+                            <li><a class="dropdown-item" href="../pages/bt.html">Brain Teaser</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="search-input">
+                    <ul id="search-dropdown" class="dropdown-menu search-results"></ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Editor-->
+
+    <div class="container-fluid mt-3 forsearch">
+        <h3 class="pb-1 mb-1 fst-italic raborder ps-2">
+            Communique
+        </h3>
+        <div class="row">
+            <div class="col-md-7">
+                <article class="blog-post ps-2">
+                    <h2 class="display-5 link-body-emphasis mb-1">RA India Hackathon 2023</h2>
+                    <p class="blog-post-meta">Vikas Vyas</p>
+                    <p>Completed the maiden Hackathon successfully. Amazing Hackers! The moment we have all been waiting
+                        for is finally here. The results of the RA-India Hackathon 2023 are out, and let's just say, the
+                        energy and innovation you have brought to the table have blown us away!</p>
+                    <img src="../assets/hk2.png" class="img-fluid" alt="...">
+                </article>
+            </div>
+            <div class="col-md-5">
+                <div class="position-sticky mt-2" style="top: 2rem;">
+                    <div class="p-2 mb-1 bg-light rounded">
+                        <img src="../assets/hk1.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-7">
+                <article class="blog-post ps-2">
+                    <h3 class=" link-body-emphasis mb-1">Security code for accessing building/secured areas
+                    </h3>
+                    <h6 class=" link-body-emphasis mt-2 mb-1">Idea Owner:
+                    </h6>
+                    <p>Pradeep K C.</p>
+                    <h6 class=" link-body-emphasis mb-1">Team:
+                    </h6>
+                    <p>Tejash Rana, Komal Adke, and Anusha.</p>
+                    <h6 class=" link-body-emphasis mb-1">Objective:
+                    </h6>
+                    <p>Mobile app that generates a code that can be used to access secured areas. The code would be
+                        valid for the duration of the visit.</p>
+                    <h6 class=" link-body-emphasis mb-1">Description:
+                    </h6>
+                    <p>Many RA facilities like Pune-Hinjewadi require a security badge to enter the building and an
+                        access code to access secured areas. If a mobile app (similar to MS-Authenticator) can be
+                        developed at the RA-India level, an employee can raise a request for access to a specific
+                        building and floor and the same can be granted for the duration of the visit. This will help
+                        save paper and time taken while the security prints the temporary card and also help employees
+                        move around freely. The app can also be used to raise requests for visitors by an RA employee
+                        who is coordinating the visit.</p>
+                    <h6 class=" link-body-emphasis mb-1">Use Case:
+                    </h6>
+                    <p>Identity & Access Issues</p>
+                    <ul>
+                        <li>
+                            <p>Registration of non-RA employees at the IT Park entrance and RA reception desk.</p>
+                        </li>
+                        <li>
+                            <p>RA employees must be dependent on the location employees to be helped with the door
+                                access.</p>
+                        </li>
+                    </ul>
+                    <p>Parking & Other Issues</p>
+                    <ul>
+                        <li>
+                            <p>Most of the employees at all RA locations commute by their own vehicle and with the
+                                rising employee count, availability of parking is becoming an issue.</p>
+                        </li>
+                        <li>
+                            <p>Other issues related to cabs, meal coupons, ROK events, etc., can also be addressed.</p>
+                        </li>
+                    </ul>
+                    <h6 class=" link-body-emphasis mb-1">Solution:
+                    </h6>
+                    <ul>
+                        <li>
+                            <p>The RA contact person mentioned in the request approves the request. The local facility
+                                management team coordinates with the IT park management and registers the visitor. The
+                                visitor gets a response on the app/portal of the various stages. Can generate visitor
+                                passes at the reception using the details in the request. Access is removed as soon as
+                                the visit timeline expires- unless it is renewed. If the visitor has a vehicle, the app
+                                should have the details of the location where visitors can park.</p>
+                        </li>
+                        <li>
+                            <p>Raises a request in the system which is approved by the contact person mentioned in the
+                                request (the contact person has to be based at the same location in the same facility
+                                and floor). Gets access to the floor provisioned for the duration of his/her stay, by
+                                notification on the app. If the access requires an access code, the same needs to be
+                                available as well. Access is removed as soon as the visit timeline expires unless it is
+                                renewed. Employees can check available parking slots at their base location. If a slot
+                                is open, they can park. Slot status changes when a vehicle leaves.</p>
+                        </li>
+                    </ul>
+                    <p>The diagram illustrates the solution architecture.</p>
+                </article>
+            </div>
+            <div class="col-md-5">
+                <div class="position-sticky mt-2" style="top: 2rem;">
+                    <div class="p-2 mb-1 bg-light rounded">
+                        <img src="../assets/hk3.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-7">
+                <article class="blog-post ps-2">
+                    <h3 class=" link-body-emphasis mb-1">Common communication service for all customer communication
+                    </h3>
+                    <h6 class=" link-body-emphasis mt-2 mb-1">Idea Owner:
+                    </h6>
+                    <p>Lathakumari B N, and Rajesh S</p>
+                    <h6 class=" link-body-emphasis mb-1">Objective:
+                    </h6>
+                    <p>The idea is to create a common event-driven email/SMS communication service, that can be used by
+                        multiple products/solutions.</p>
+                    <h6 class=" link-body-emphasis mb-1">Description:
+                    </h6>
+                    <p>The idea is to create a common event-driven email/SMS communication service, that can be used by
+                        multiple products/solutions. Service will be hosted in the cloud, for generating
+                        communication-related events. Service will be used to publish events in queues. To process those
+                        events, the subscriber will be listening to those queues. As per the event details the
+                        subscriber will process those communication events.</p>
+                    <h6 class=" link-body-emphasis mb-1">Features Required:
+                    </h6>
+                    <ol type="a">
+                        <li>
+                            <p>Scan all SMS and emails with communication guidelines and hold communication that
+                                contains bad words.</p>
+                        </li>
+                        <li>
+                            <p>Count and store communication details as per usage by different products and tenants.</p>
+                        </li>
+                        <li>
+                            <p>Common REST API contract, for sending all communication (alerts, notifications etc.) from
+                                different products.</p>
+                        </li>
+                    </ol>
+                    <h6 class=" link-body-emphasis mb-1">Advantages:
+                    </h6>
+                    <ol type="a">
+                        <li>
+                            <p>All communication to users/customers and communication-related standards can be
+                                maintained in one place.</p>
+                        </li>
+                        <li>
+                            <p>Security-related standards can be maintained in one place.</p>
+                        </li>
+                        <li>
+                            <p>One application/service for the same activity from multiple products.</p>
+                        </li>
+                    </ol>
+                    <h6 class=" link-body-emphasis mb-1">Use Case:
+                    </h6>
+                    <ul>
+                        <li>
+                            <p>For example, if some service/component has a breakdown in an application then some of the
+                                functionalities will not work in an application. There should be an alert or Email/SMS
+                                for the system integrator on this breakdown in order to fix the issue immediately
+                                without affecting customers.</p>
+                        </li>
+                        <li>
+                            <p>Based on the analytics data, notifications/alerts can be sent to the customers
+                                automatically. Need to trigger a large number of notifications/alerts automatically with
+                                scheduled jobs.</p>
+                        </li>
+                    </ul>
+
+                    <h6 class=" link-body-emphasis mb-1">Solution:
+                    </h6>
+                    <p>The idea is to create a common event-driven email/SMS communication service, that can be used by
+                        multiple products/solutions. Service will be hosted in the cloud, for generating
+                        communication-related events. Service will be used to publish events in queues. To process those
+                        events, subscriber will be listening to those queues. As per the event details subscribers will
+                        process those communication events.</p>
+                    <ul>
+                        <li>
+                            <p>Created Azure SQL database to store event information.</p>
+                        </li>
+                        <li>
+                            <p>Implemented API gateway using Spring boot which includes service registry and
+                                authentication using Spring boot oauth2.</p>
+                        </li>
+                        <li>
+                            <p>Implemented Rest API to push the events to the Event Hub.</p>
+                        </li>
+                        <li>
+                            <p>Implemented Rest API to check the unacceptable words from the event message body which
+                                will check the event message body content before pushing events to the EventHub which is
+                                supported for multiple languages. For ex- English, German etc.</p>
+                        </li>
+                        <li>
+                            <p>Implemented Rest API to check the event status whether the event is delivered or failed.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Created an Event Hub in the Azure portal to receive the events from an application.</p>
+                        </li>
+                        <li>
+                            <p>Created a Function App to process the events from the Event Hub.</p>
+                        </li>
+                        <li>
+                            <p>Created an Email communication service and domain to send an email. Created communication
+                                service and got a toll-free number from Azure communication service to send SMS.</p>
+                        </li>
+                        <li>
+                            <p>Azure function sends an event to the communication service to send an Email/SMS and
+                                updates the status of the Email/SMS (successful/failed) in the database.</p>
+                        </li>
+                    </ul>
+                    <p>The diagram illustrates the solution architecture.</p>
+                </article>
+            </div>
+            <div class="col-md-5">
+                <div class="position-sticky mt-2" style="top: 2rem;">
+                    <div class="p-2 mb-1 bg-light rounded">
+                        <img src="../assets/hk4.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--blocks-->
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header cardheaderbg text-white fw-bold">Industry Focus</div>
+                    <div class="card-body d-flex flex-row justify-content-center">
+                        <div>
+                            <h5 class="card-title">Enterprise Vision of Connected Worker</h5>
+                            <p class="card-text">In Manufacturing Execution Systems (MES), "Connected Worker" refers to the integration of workers...</p>
+                            <a href="../pages/connectedworker.html" class="">Contine Reading...</a>
+                        </div>
+                        <img src="../assets/cw1.jpg" class="w-25">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header cardheaderbg text-white fw-bold">Industry Focus</div>
+                    <div class="card-body d-flex flex-row justify-content-center">
+                        <div>
+                            <h5 class="card-title">FT Optix - DataMosaix Connector</h5>
+                            <p class="card-text">FactoryTalk® Optix™ is an HMI visualization platform. It uses open communication standards like OPC UA...</p>
+                            <a href="#" class="">Contine Reading...</a>
+                        </div>
+                        <img src="../assets/connthumb.png" class="w-25">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="container-fluid nl-footer mt-3 ps-0 pe-0">
+        <div class="row g-0 pe-0">
+            <div class="col pt-5 pb-5 d-flex flex-row justify-content-start">
+                <a class="ps-4" href="https://www.linkedin.com/company/rockwell-automation"><img class="footlogo"
+                        src="../assets/linkedin.svg" alt=""></a>
+                <a class="ps-4" href="https://www.facebook.com/ROKAutomation"><img class="footlogo"
+                        src="../assets/facebook.svg" alt=""></a>
+                <a class="ps-4" href="http://twitter.com/ROKAutomation"><img class="footlogo" src="../assets/x.svg"
+                        alt=""></a>
+                <a class="ps-4" href="http://www.youtube.com/ROKAutomation"><img class="footlogo"
+                        src="../assets/youtube.svg" alt=""></a>
+                <a class="ps-4" href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"><img
+                        class="footlogo" src="../assets/blog.svg" alt=""></a>
+
+            </div>
+            <div class="col d-flex flex-column justify-content-end">
+                <div class="row g-0 p-0">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8 d-flex flex-column justify-content-end">
+                        <div class="nl-footer-inn d-flex flex-row justify-content-center">
+                            <p class="text-white ps-5 pt-3 pe-3 text-end" style="line-height: 20px;">© 2024
+                                Rockwell<br>Automation
+                            </p>
+                            <div class="vl mt-3 pe-3"></div>
+                            <img class="d-block" width="170" src="../assets/whitelogo.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!-- Include FlexSearch Script -->
+    <script src="https://cdn.jsdelivr.net/npm/flexsearch/dist/flexsearch.bundle.js"></script>
+    <script src="../assets/search.js"></script>
+</body>
+
+</html>

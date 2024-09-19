@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Know Your Colleague</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../assets/app.css" rel="stylesheet" />
+    <style>
+        /* Custom CSS to remove link styles in search results */
+        #search-dropdown .dropdown-item {
+            color: #000 !important; /* Normal text color */
+            text-decoration: none !important; /* Remove underline */
+        }
+    
+        /* Specific to <a> tags inside dropdown-item */
+        #search-dropdown .dropdown-item a {
+            color: inherit !important; /* Inherit the color from parent */
+            text-decoration: none !important; /* Remove underline from <a> */
+            display: block; /* Ensure it behaves like a block element */
+            padding: 10px; /* Optional: add some padding for better readability */
+        }
+    
+        /* Hover effects for better user experience */
+        #search-dropdown .dropdown-item:hover a {
+            background-color: #f8f9fa; /* Optional: add hover effect */
+        }
+    
+        /* Styling for bold titles in the search results */
+        #search-dropdown .dropdown-item strong {
+            font-weight: bold;
+        }
+    
+        /* Styling for the snippet text */
+        #search-dropdown .dropdown-item small {
+            color: #6c757d; /* Optional: make the snippet gray */
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/nllogo.png" height="70" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Articles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../pages/synergy.html">FTDS Team Meetup</a></li>
+                            <li><a class="dropdown-item" href="../pages/hackathon.html">RA India Hackathon 2023</a></li>
+                            <li><a class="dropdown-item" href="../pages/connectedworker.html">Connected Worker</a></li>
+                            <li><a class="dropdown-item" href="../pages/ftdm.html">FT Optix - DataMosaix Connector</a></li>
+                            <li><a class="dropdown-item" href="../pages/llm.html">Tech Writer vs LLM</a></li>
+                            <li><a class="dropdown-item" href="../pages/kyc.html">Know Your Colleague</a></li>
+                            <li><a class="dropdown-item" href="../pages/sikkim.html">Personal Space</a></li>
+                            <li><a class="dropdown-item" href="../pages/bt.html">Brain Teaser</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="search-input">
+                    <ul id="search-dropdown" class="dropdown-menu search-results"></ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Editor-->
+
+    <div class="container-fluid mt-3 forsearch">
+        <h3 class="pb-1 mb-1 fst-italic raborder ps-2">
+            Know Your Colleague
+        </h3>
+        <h2 class="ps-2 display-5 link-body-emphasis mb-1">Path to Success: An Inspiring Conversation with <span
+                class="text-warning">Swathi Lakhlani</span></h2>
+        <p class="ps-2 blog-post-meta">Sanjeev Dhurwey</p>
+        <div class="row">
+            <div class="col-md-8">
+                <article class="blog-post ps-2">
+                    <p>Getting to know our coworkers in our workplace can benefit all of us - as it helps us become more
+                        productive by creating a harmonious work environment that caters to individual needs. If we know
+                        how our colleagues prefer to work, such as quietly or collaboratively, we are in a much better
+                        position to create proper environments.</p>
+                    <p>Taking the time to understand the ideal working conditions for colleagues also boosts their
+                        motivation and nurtures trust. Join us for an inspiring conversation with <span
+                            class="fw-bold">Swati Lakhlani</span> - Senior Manager, Software Engineering - Plex.</p>
+                    <hr>
+                    <p>Hello Swati, it’s my pleasure, I am glad to interview you. Let’s get started…</p>
+                    <p class="fst-italic text-white bg-secondary ps-1" style="--bs-bg-opacity: .5;">I have had the pleasure of collaborating and
+                        coordinating with you during visits & meetings, and I found you to be a very inspiring leader.
+                        Could you please describe your leadership style and how you “lead” others?</p>
+                    <p>I do not subscribe to a one-size-fits-all approach to leadership. Instead, I believe in being
+                        flexible and adaptable according to the situation. Every individual and circumstance is unique
+                        and requires a different leadership style. Therefore, I adjust my approach to meet the specific
+                        needs of each situation and team member.</p>
+                    <p class="fst-italic text-white bg-secondary ps-1" style="--bs-bg-opacity: .5;">Yeah, I must adapt your leadership style <span
+                            class="fst-normal">😊</span> What’s the biggest lesson you’ve learned?</p>
+                    <p>One of the biggest lessons I’ve learned is the importance of embracing change and adaptability.
+                        In the ever-evolving tech industry, being open to change and continuously adapting to new
+                        technologies, methodologies, and challenges is crucial for sustained success.</p>
+                    <p>Additionally, I’ve learned the value of authenticity and resilience. Leading with authenticity
+                        helps build trust and fosters a positive work environment, while resilience enables me to
+                        navigate and overcome obstacles effectively.</p>
+                    <p class="fst-italic text-white bg-secondary ps-1" style="--bs-bg-opacity: .5;">Given your emphasis on adaptability and resilience, did you ever have a woman leader as a mentor
+                        or are there specific women who inspired you and how?</p>
+                    <p>I am deeply inspired by Indra Nooyi. Her strategic vision, resilience, and authenticity as the
+                        former CEO of PepsiCo have profoundly influenced my leadership style. Indra Nooyi's ability to
+                        balance business success with social responsibility and her commitment to diversity and
+                        inclusion resonate with my own values.</p>
+                        <p>Her advocacy for women in leadership roles has motivated me to mentor and support other women in the IT field. In summary, Indra Nooyi's exemplary leadership inspires me to lead with integrity, innovation, and empathy.</p>
+                </article>
+            </div>
+            <div class="col-md-4" >
+                <div class="position-sticky mt-2" style="top:2rem;">
+                    <div class=" mb-1 bg-light rounded">
+                        <img src="../assets/sl1.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="position-sticky mt-1" style="top:2rem;">
+                    <div class="ps-1 mb-1 bg-light rounded">
+                        <img src="../assets/sl2.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <article class="blog-post ps-2">
+                    <p class="fst-italic text-white bg-secondary ps-1" style="--bs-bg-opacity: .5;">I know you always stay motivated and persevere through challenges. Let me move on… you are undoubtedly busy; how do you take care of yourself and maintain a good mental health?</p>
+                    <p>Even with a busy schedule, I make sure to take care of my mental health. I love meditating—it helps me stay calm and focused. Breathwork exercises are also a big part of my routine; they really help me manage stress. And of course, I can’t forget music! Listening to my favourite tunes is a great way to relax and recharge. These practices keep me balanced and ready to tackle whatever comes my way.</p>
+                    <p class="fst-italic text-white bg-secondary ps-1" style="--bs-bg-opacity: .5;">Great! How do you encourage women to not give up?</p>
+                    <p>Here are few points based on what I learned in my journey: Believe in yourself and your abilities. Set realistic goals and seek support from friends, family, and colleagues. Be adaptable and learn from setbacks. Prioritize self-care with meditation, breathwork, and music. Stay connected with a strong network of supportive women. Keep learning and growing. Celebrate your achievements, no matter how small. Stay resilient and keep pushing forward. Be true to yourself and lead with integrity.
+                        </p>
+                    <p class="fst-italic text-white bg-secondary ps-1" style="--bs-bg-opacity: .5;">You are right! We need to keep learning and growing. Why do you think companies would benefit from having more women at the top?</p>
+                    <p>Companies benefit from having women leaders because they bring diverse perspectives and experiences, which can lead to more innovative solutions and better decision-making. Women leaders often excel in fostering collaboration and teamwork, creating a more cohesive and motivated workforce. Women leaders like Mary Barra: CEO of General Motors, and Indra Nooyi: Former CEO of PepsiCO are some such examples.</p>
+                    <p class="bg-warning text-dark p-1" style="--bs-bg-opacity: .5;">Awesome! In a nutshell, your leadership style is characterized by flexibility, adaptability, authenticity, and resilience. You believe in tailoring an approach to meet the unique needs of individuals and situations, drawing inspiration from the visionary leadership of Indra Nooyi. 😊 I am glad that I got a chance to talk to you and learn about you. 😊 Thank you so much for speaking to us and inspiring us.</p>
+                </article>
+            </div>
+        </div>
+        <p class="mt-2">Conclusion: Leadership style is characterized by flexibility, adaptability, authenticity, and resilience. Believe in tailoring approach to meet the unique needs of individuals and situations, drawing inspiration from the visionary leadership of Indra Nooyi. Embrace change, foster a positive work environment, and navigate challenges with resilience, strive to contribute to the sustained success of team and organization.</p>
+        <p class="bg-warning text-dark p-1" style="--bs-bg-opacity: .5;">We would love to hear your thoughts and learnings from this interview. Let us know via email: 
+            <br>Sanjeev Dhurwey: SDhurwe@ra.rockwell.com
+            <br>Swati Lakhlani: swati.lakhlani@rockwellautomation.com
+            </p>
+    </div>
+
+    <!--blocks-->
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header cardheaderbg text-white fw-bold">Personal Space</div>
+                    <div class="card-body d-flex flex-row justify-content-center">
+                        <div>
+                            <h5 class="card-title">Unveiling the Beauty of Sikkim</h5>
+                            <p class="card-text">Embarking on a mesmerizing journey through sikkim, we were captivated...</p>
+                            <a href="#" class="">Contine Reading...</a>
+                        </div>
+                        <img src="../assets/psthumb.png" class="cardimagesize">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header cardheaderbg text-white fw-bold">Trivia Corner</div>
+                    <div class="card-body d-flex flex-row justify-content-center">
+                        <div>
+                            <h5 class="card-title">Brain Teaser Quiz - Toughie</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="../pages/bt.html" class="">Contine Reading...</a>
+                        </div>
+                        <img src="../assets/quthmb.png" class="w-25">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="container-fluid nl-footer mt-3 ps-0 pe-0">
+        <div class="row g-0 pe-0">
+            <div class="col pt-5 pb-5 d-flex flex-row justify-content-start">
+                <a class="ps-4" href="https://www.linkedin.com/company/rockwell-automation"><img class="footlogo"
+                        src="../assets/linkedin.svg" alt=""></a>
+                <a class="ps-4" href="https://www.facebook.com/ROKAutomation"><img class="footlogo"
+                        src="../assets/facebook.svg" alt=""></a>
+                <a class="ps-4" href="http://twitter.com/ROKAutomation"><img class="footlogo" src="../assets/x.svg"
+                        alt=""></a>
+                <a class="ps-4" href="http://www.youtube.com/ROKAutomation"><img class="footlogo"
+                        src="../assets/youtube.svg" alt=""></a>
+                <a class="ps-4" href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"><img
+                        class="footlogo" src="../assets/blog.svg" alt=""></a>
+
+            </div>
+            <div class="col d-flex flex-column justify-content-end">
+                <div class="row g-0 p-0">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8 d-flex flex-column justify-content-end">
+                        <div class="nl-footer-inn d-flex flex-row justify-content-center">
+                            <p class="text-white ps-5 pt-3 pe-3 text-end" style="line-height: 20px;">© 2024
+                                Rockwell<br>Automation
+                            </p>
+                            <div class="vl mt-3 pe-3"></div>
+                            <img class="d-block" width="170" src="../assets/whitelogo.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!-- Include FlexSearch Script -->
+    <script src="https://cdn.jsdelivr.net/npm/flexsearch/dist/flexsearch.bundle.js"></script>
+    <script src="../assets/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bits and Bytes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="assets/app.css" rel="stylesheet" />
+    <style>
+        /* Custom CSS to remove link styles in search results */
+        #search-dropdown .dropdown-item {
+            color: #000 !important; /* Normal text color */
+            text-decoration: none !important; /* Remove underline */
+        }
+    
+        /* Specific to <a> tags inside dropdown-item */
+        #search-dropdown .dropdown-item a {
+            color: inherit !important; /* Inherit the color from parent */
+            text-decoration: none !important; /* Remove underline from <a> */
+            display: block; /* Ensure it behaves like a block element */
+            padding: 10px; /* Optional: add some padding for better readability */
+        }
+    
+        /* Hover effects for better user experience */
+        #search-dropdown .dropdown-item:hover a {
+            background-color: #f8f9fa; /* Optional: add hover effect */
+        }
+    
+        /* Styling for bold titles in the search results */
+        #search-dropdown .dropdown-item strong {
+            font-weight: bold;
+        }
+    
+        /* Styling for the snippet text */
+        #search-dropdown .dropdown-item small {
+            color: #6c757d; /* Optional: make the snippet gray */
+        }
+    </style>
+     
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg sticky-top bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/nllogo.png" height="70" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-black" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Articles
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/synergy.html">FTDS Team Meetup</a></li>
+                            <li><a class="dropdown-item" href="pages/hackathon.html">RA India Hackathon 2023</a></li>
+                            <li><a class="dropdown-item" href="pages/connectedworker.html">Connected Worker</a></li>
+                            <li><a class="dropdown-item" href="pages/ftdm.html">FT Optix - DataMosaix Connector</a></li>
+                            <li><a class="dropdown-item" href="pages/llm.html">Tech Writer vs LLM</a></li>
+                            <li><a class="dropdown-item" href="pages/kyc.html">Know Your Colleague</a></li>
+                            <li><a class="dropdown-item" href="pages/sikkim.html">Personal Space</a></li>
+                            <li><a class="dropdown-item" href="pages/bt.html">Brain Teaser</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                        id="search-input">
+                    <ul id="search-dropdown" class="dropdown-menu search-results"></ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Banner-->
+
+    <div class="container-fluid">
+        <div class="row bg-light">
+            <div class="col-lg-3 d-flex flex-column justify-content-center ps-0 pe-0">
+                <div class="hero-banner-text">
+                    <p class="hero-banner-title">Bits & Bytes</p>
+                    <p class="p-0 m-0">S&C INDIA CAMPUS NEWSLETTER</p>
+                    <p class="p-0 m-0">Edition 10</p>
+                    <p>Aug 2024</p>
+                </div>
+            </div>
+            <div class="col-lg-9 ps-0 pe-0">
+                <div class="hero-banner__media-container">
+                    <div class="hero-banner__media-wrapper">
+                        <div class="hero-banner__media-mask-wrapper">
+                            <svg>
+                                <clipPath id="hero-banner__media-mask" clipPathUnits="objectBoundingBox">
+                                    <path
+                                        d="M1,0 H0.433 C0.417,-0.001,0.401,0.014,0.39,0.04 C0.332,0.17,0.266,0.325,0.2,0.481 C0.133,0.638,0.066,0.795,0.008,0.925 C0.007,0.929,0.005,0.933,0.004,0.937 C0,0.948,-0.001,0.964,0.002,0.977 C0.006,0.995,0.012,1,0.021,1 H0.493 H1 V0">
+                                    </path>
+                                </clipPath>
+                            </svg>
+                        </div>
+                        <picture>
+                            <img class="hero-banner__image" src="assets/image001.png" srcset=""
+                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);"
+                                alt="Rockwell Automation on Aug. 16, 2017 in Cleveland, OH.">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Editor-->
+
+    <div class="container-fluid mt-3 forsearch">
+        <h2 class="pb-1 mb-1 fst-italic ps-2 raborder">
+            From the Desk of Editor
+        </h2>
+        <div class="row">
+            <div class="col-md-8">
+                <article class="blog-post ps-2">
+                    <h5 class="link-body-emphasis mt-1 mb-1" style="color: #6c757d;">Nandini Raisinghani</h5>
+                    <p class="mt-3">This edition brings you the latest events, innovations, product features, and more.
+                        The cover
+                        story starts with the journey of FT Design Studio Engg efforts.</p>
+                    <p>As the teams gets ramped up on process, technology, and the product domain, it was great to have
+                        Brahma visiting and spending time with the team. He shared his thoughts on FTDS evolution,
+                        vision, and process. As we wind up with Hackathon innovation efforts from last year, we are
+                        ready to share new proof of concepts from Software and Hardware technologies.</p>
+                    <p>New-age digital technologies have enabled more ways to support manufacturing professionals than
+                        ever before. Connected worker technologies actively exchanges data in real-time and
+                        contextualizes the "Connected Worker" in a broader system. Connected technologies help close the
+                        skill gap and with access to information when they need it - this increases productivity and
+                        lessens error.</p>
+                    <p>FT Optix is an HMI to enhance the visualization experience at the Edge. FT DataMosaix is at the
+                        heart of Data unification and data access from disparate sources. FT Optix – FT DataMosaix
+                        connector is key to easy data availability between the two.</p>
+                    <p>It is great to see the InfoDev team challenge themselves with new age technology. Also artistic
+                        representation of monsoon using watercolors by Ram Kamisetty – and Piyush Sayani’s vacation in
+                        Sikkim, a Northeastern state of India known for its stunning landscape.</p>
+                    <p>Delighted to shine Career Spotlight on Swati Lakhani – Senior Manager, Plex, and hear her views
+                        on Motivation, Leadership style, Women encouragement and more.</p>
+                    <p>Includes a quiz on valuable facts on Rockwell and AI, with answers embedded in. All this
+                        proactive participation is indicative of a positive attitude and willingness to make an impact
+                        in various aspects of life.</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <div class="position-sticky mt-2" style="top: 2rem;">
+                    <div class="p-4 mb-3 bg-light rounded">
+                        <h4 class="fst-italic">About Editor</h4>
+                        <p class="mb-0">Add information and introduction of the editor accordingly.</p>
+                        <p class="mb-0">Add information and introduction of the editor accordingly.</p>
+                        <p class="mb-0">Add information and introduction of the editor accordingly.</p>
+                        <p class="mb-0">Add information and introduction of the editor accordingly.</p>
+                        <p class="mb-0">Add information and introduction of the editor accordingly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--blocks-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header cardheaderbg text-white fw-bold">Hackathon</div>
+                    <div class="card-body d-flex flex-row justify-content-center">
+                        <div>
+                            <h5 class="card-title">RA India Hackathon 2023</h5>
+                            <p class="card-text">Completed the maiden Hackathon successfully. Amazing Hackers! The moment we have...</p>
+                            <a href="pages/hackathon.html" class="">Contine Reading...</a>
+                        </div>
+                        <img src="assets/hckthumb.jpg" class="w-25">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header cardheaderbg text-white fw-bold">Know Your Colleague</div>
+                    <div class="card-body d-flex flex-row justify-content-center">
+                        <div>
+                            <h5 class="card-title">Path to Success</h5>
+                            <p class="card-text pe-1">Getting to know our coworkers in our workplace can benefit all of us - as it helps us become...</p>
+                            <a href="pages/kyc.html" class="">Contine Reading...</a>
+                        </div>
+                        <img src="assets/kycthumb.png" class="w-25">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Archives-->
+
+    <div class="container-fluid mt-3 mb-3">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pb-1 mb-3 fst-italic raborder ps-2">
+                    Newsletter Archives
+                </h2>
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-left mt-2">
+                    <div class="card mt-2 mt-md-0 me-3">
+                        <div class="card-body ps-5 pe-5">
+                            <p class="card-text pb-0 mb-0"><b>Edition</b></p>
+                            <p class="card-text">Date</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3">
+                        <div class="card-body ps-5 pe-5">
+                            <p class="card-text pb-0 mb-0"><b>Edition</b></p>
+                            <p class="card-text">Date</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3">
+                        <div class="card-body ps-5 pe-5">
+                            <p class="card-text pb-0 mb-0"><b>Edition</b></p>
+                            <p class="card-text">Date</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3">
+                        <div class="card-body ps-5 pe-5">
+                            <p class="card-text pb-0 mb-0"><b>Edition</b></p>
+                            <p class="card-text">Date</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3">
+                        <div class="card-body ps-5 pe-5">
+                            <p class="card-text pb-0 mb-0"><b>Edition</b></p>
+                            <p class="card-text">Date</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3">
+                        <div class="card-body ps-5 pe-5">
+                            <p class="card-text pb-0 mb-0"><b>Edition</b></p>
+                            <p class="card-text">Date</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3">
+                        <div class="card-body ps-5 pe-5">
+                            <p class="card-text pb-0 mb-0"><b>Edition</b></p>
+                            <p class="card-text">Date</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Team-->
+
+    <div class="container-fluid mt-3 mb-3">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="pb-1 mb-3 fst-italic raborder ps-2">
+                    Editorial Team
+                </h2>
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-left mt-2">
+                    <div class="card mt-2 mt-md-0 me-3" style="width: 15rem;">
+                        <img src="/assets/sd.png" class="card-img-top cardimagetopsize" alt="...">
+                        <div class="card-body">
+                            <p class="card-text pb-0 mb-0"><b>Sanjeev Dhurwey</b></p>
+                            <p class="card-text">Manager, Information Development</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3" style="width: 15rem;">
+                        <img src="/assets/rk.png" class="card-img-top cardimagetopsize" alt="...">
+                        <div class="card-body">
+                            <p class="card-text pb-0 mb-0"><b>Ram Kumar Kamisetty</b></p>
+                            <p class="card-text">Lead Information <br>Developer</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3" style="width: 15rem;">
+                        <img src="/assets/sm.png" class="card-img-top cardimagetopsize" alt="...">
+                        <div class="card-body">
+                            <p class="card-text pb-0 mb-0"><b>Satarupa Mukherjee</b></p>
+                            <p class="card-text">Senior Information Developer</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3" style="width: 15rem;">
+                        <img src="/assets/vd.png" class="card-img-top cardimagetopsize" alt="...">
+                        <div class="card-body">
+                            <p class="card-text pb-0 mb-0"><b>Vishnu Das</b></p>
+                            <p class="card-text">Senior Information Developer</p>
+                        </div>
+                    </div>
+                    <div class="card mt-2 mt-md-0 me-3" style="width: 15rem;">
+                        <img src="/assets/sp.png" class="card-img-top cardimagetopsize" alt="...">
+                        <div class="card-body">
+                            <p class="card-text pb-0 mb-0"><b>Sampath Kumar Pothuru</b></p>
+                            <p class="card-text">Senior Information Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="container-fluid nl-footer mt-3 ps-0 pe-0">
+        <div class="row g-0 pe-0">
+            <div class="col pt-5 pb-5 d-flex flex-row justify-content-start">
+                <a class="ps-4" href="https://www.linkedin.com/company/rockwell-automation"><img class="footlogo"
+                        src="assets/linkedin.svg" alt=""></a>
+                <a class="ps-4" href="https://www.facebook.com/ROKAutomation"><img class="footlogo"
+                        src="assets/facebook.svg" alt=""></a>
+                <a class="ps-4" href="http://twitter.com/ROKAutomation"><img class="footlogo" src="assets/x.svg"
+                        alt=""></a>
+                <a class="ps-4" href="http://www.youtube.com/ROKAutomation"><img class="footlogo"
+                        src="assets/youtube.svg" alt=""></a>
+                <a class="ps-4" href="https://www.rockwellautomation.com/en-us/company/news/blogs.html"><img
+                        class="footlogo" src="assets/blog.svg" alt=""></a>
+
+            </div>
+            <div class="col d-flex flex-column justify-content-end">
+                <div class="row g-0 p-0">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-8 d-flex flex-column justify-content-end">
+                        <div class="nl-footer-inn d-flex flex-row justify-content-center">
+                            <p class="text-white ps-5 pt-3 pe-3 text-end" style="line-height: 20px;">© 2024
+                                Rockwell<br>Automation
+                            </p>
+                            <div class="vl mt-3 pe-3"></div>
+                            <img class="d-block" width="170" src="assets/whitelogo.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!-- Include FlexSearch Script -->
+    <script src="https://cdn.jsdelivr.net/npm/flexsearch/dist/flexsearch.bundle.js"></script>
+    <script src="assets/search.js"></script>
+</body>
+
+</html>
